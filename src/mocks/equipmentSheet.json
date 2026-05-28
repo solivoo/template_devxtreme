@@ -37,25 +37,25 @@
     "detailedLocation": "Patio de Operaciones Logisticas - Sector B4",
     "description": "Maquinaria pesada destinada al transporte de carga sobredimensionada. Cuenta con sistema hidráulico reforzado tipo cuello de ganso para facilitar el acople y desacople de plataformas."
   },
-  "imageUrl": "https://picsum.photos/1200/675",
+  "imageUrl": "/XCIENT-TRACTO-6X4-720X450PX.jpg",
   "imageCaption": "Vista principal del activo",
   "technicalParameters": [
     {
       "id": "tp-1",
-      "characteristic": "Presión de carga",
-      "value": "42.0",
+      "characteristic": "Volumen de carga",
+      "value": "45.5",
       "unit": "Metros Cúbicos"
     },
     {
       "id": "tp-2",
-      "characteristic": "Capacidad tanque",
-      "value": "44,000",
+      "characteristic": "Capacidad de arrastre",
+      "value": "60,000",
       "unit": "Kg"
     },
     {
       "id": "tp-3",
-      "characteristic": "Presión inflado",
-      "value": "2,100",
+      "characteristic": "Presión hidráulica",
+      "value": "2,500",
       "unit": "PSI"
     }
   ],

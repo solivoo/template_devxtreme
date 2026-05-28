@@ -68,7 +68,7 @@ const GeneralDataSection = ({ sheet }: { sheet: EquipmentSheet }) => {
         </div>
         <div className={styles.generalCardTitleRow}>
           <InfoSectionIcon className={styles.generalCardTitleIcon} />
-          <p className={styles.generalCardTitle}>Datos Generales</p>
+          <p className={styles.generalCardTitle}>Información técnica</p>
         </div>
         <hr className={styles.generalCardDivider} />
       </header>
@@ -116,7 +116,7 @@ const TechnicalParametersGrid = ({ rows }: { rows: TechnicalParameter[] }) => (
     <header className={styles.technicalCardHeader}>
       <div className={styles.generalCardTitleRow}>
         <InfoSectionIcon className={styles.generalCardTitleIcon} />
-        <p className={styles.generalCardTitle}>Parámetros Técnicos</p>
+        <p className={styles.generalCardTitle}>Otras características</p>
       </div>
       <hr className={styles.generalCardDivider} />
     </header>
@@ -223,7 +223,7 @@ export const EquipmentSheetPage = () => {
                     src={data.imageUrl}
                     alt={data.title}
                   />
-                  <span className={styles.photoCaption}>{data.imageCaption}</span>
+                  {/* <span className={styles.photoCaption}>{data.imageCaption}</span> */}
                 </div>
               </section>
               <TechnicalParametersGrid rows={data.technicalParameters} />
