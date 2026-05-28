@@ -94,7 +94,7 @@ sequenceDiagram
     Note over S,API: Fase 2 — Datos del equipo
     S ->>+ API: Llamada API (HTTPS)
     API ->>+ SEC: Validar solicitud
-    Note right of SEC: Cuotas · Sanitización<br/>CORS · Rate limit
+    Note right of SEC: Control de consumo<br/>Validación de datos<br/>Control de origen · Control de accesos
     SEC -->>- API: Autorizado / rechazado
 
     Note over API,DB: Fase 3 — Respuesta
@@ -163,9 +163,9 @@ flowchart TB
 
     subgraph Seguridad[" Seguridad (API) "]
         direction TB
-        S1["Cuotas y API Keys"] --> S2["Sanitización"]
-        S2 --> S3["CORS · Headers"]
-        S3 --> S4["Rate limiting"]
+        S1["Control de consumo"] --> S2["Validación de datos"]
+        S2 --> S3["Control de origen"]
+        S3 --> S4["Control de accesos"]
     end
 
     subgraph Datos[" Datos "]
