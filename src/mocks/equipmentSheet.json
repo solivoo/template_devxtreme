@@ -1,0 +1,89 @@
+{
+  "id": "equipment-cabezal-01",
+  "title": "Ficha Técnica: CABEZAL #1",
+  "statusLabel": "ACTIVO OPERATIVO",
+  "assetCode": "EBA0006",
+  "alertMessage": "Este equipo se encuentra activo en un plan de mantenimiento",
+  "lastMaintenance": {
+    "date": "10/05/2019",
+    "mileage": "115,000 Km"
+  },
+  "nextMaintenance": {
+    "estimatedDate": "08/06/2024",
+    "limitKm": "142,000 Km"
+  },
+  "generalData": {
+    "overview": [
+      { "label": "Nombre del activo", "value": "CABEZAL #1" },
+      { "label": "Área", "value": "EQUIPOS DADOS DE BAJA" },
+      { "label": "Grupo", "value": "EQUIPOS VENDIDOS A TERCERO" },
+      { "label": "Subgrupo", "value": "VARIOS" }
+    ],
+    "detailsLeft": [
+      { "label": "Tipo de equipo", "value": "EQUIPO GENERICO" },
+      { "label": "Marca", "value": "CANDELEJO" },
+      { "label": "Modelo", "value": "HIDRÁULICA CUELLO GANSO" },
+      { "label": "Año", "value": "2025" },
+      { "label": "Serie", "value": "ANDI21122015NOMADA05" }
+    ],
+    "detailsRight": [
+      { "label": "Cód. activo", "value": "EBA0006" },
+      { "label": "Cód. externo", "value": "- - -" },
+      { "label": "Placa", "value": "GSL6094" },
+      { "label": "Inicio de operación", "value": "22/12/2025" },
+      { "label": "Número", "value": "276" }
+    ],
+    "others": "Sin información adicional",
+    "detailedLocation": "Patio de Operaciones Logisticas - Sector B4",
+    "description": "Maquinaria pesada destinada al transporte de carga sobredimensionada. Cuenta con sistema hidráulico reforzado tipo cuello de ganso para facilitar el acople y desacople de plataformas."
+  },
+  "imageUrl": "https://picsum.photos/1200/675",
+  "imageCaption": "Vista principal del activo",
+  "technicalParameters": [
+    {
+      "id": "tp-1",
+      "characteristic": "Presión de carga",
+      "value": "42.0",
+      "unit": "Metros Cúbicos"
+    },
+    {
+      "id": "tp-2",
+      "characteristic": "Capacidad tanque",
+      "value": "44,000",
+      "unit": "Kg"
+    },
+    {
+      "id": "tp-3",
+      "characteristic": "Presión inflado",
+      "value": "2,100",
+      "unit": "PSI"
+    }
+  ],
+  "actions": [
+    { "id": "a-1", "label": "Historial de mantenimiento", "icon": "clock" },
+    { "id": "a-2", "label": "Ver plan de mantenimiento", "icon": "event" },
+    { "id": "a-3", "label": "Ver ficha técnica completa", "icon": "find" },
+    { "id": "a-4", "label": "Solicitar Orden de trabajo", "icon": "edit" }
+  ],
+  "recentEvents": [
+    {
+      "id": "e-1",
+      "title": "Mantenimiento Preventivo completado",
+      "date": "10 de mayo, 2019",
+      "variant": "success"
+    },
+    {
+      "id": "e-2",
+      "title": "Cambio de filtros y aceite",
+      "date": "15 de septiembre, 2019",
+      "variant": "info"
+    },
+    {
+      "id": "e-3",
+      "title": "Traslado a Guayaquil",
+      "date": "12 de enero, 2024",
+      "variant": "neutral"
+    }
+  ],
+  "footerText": "© 2026 SINFOEC"
+}

@@ -1,5 +1,12 @@
+@import './theme/figma-tokens.css';
+
 :root {
   color-scheme: light;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 html.theme-dark {
@@ -13,6 +20,21 @@ html.theme-dark body {
 
 #root {
   text-align: left;
+}
+
+body {
+  margin: 0;
+  background: var(--figma-color-surface-footer);
+}
+
+.app-toolbar__nav a {
+  color: light-dark(#028bc9, #7ec8f3);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.app-toolbar__nav a:hover {
+  text-decoration: underline;
 }
 
 .app-toolbar {

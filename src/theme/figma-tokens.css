@@ -1,0 +1,72 @@
+/**
+ * Tokens de color — Ficha Técnica SMPROG
+ * Archivo: https://www.figma.com/design/4DVxyBby1cPtJieNq7Vqdr/Módulo-combustible
+ * Frame: 124:1155 (Web)
+ * Origen: get_design_context (nodo 124:1155) + anotaciones de paleta (23:1560–23:1566)
+ */
+:root {
+  /* Marca */
+  --figma-color-brand-primary: #003f87;
+  --figma-color-brand-header-panel: #176ea8;
+  --figma-color-brand-button: #028bc9;
+
+  /* Texto */
+  --figma-color-text-primary: #1a1c1c;
+  --figma-color-text-secondary: #424752;
+  --figma-color-text-on-dark: #ffffff;
+  --figma-color-text-label: #003f87;
+
+  /* Superficies */
+  --figma-color-surface-page: #ffffff;
+  --figma-color-surface-card: #ffffff;
+  --figma-color-surface-card-muted: #f9f9f9;
+  --figma-color-surface-footer: #f3f3f3;
+  --figma-color-surface-table-header: #eeeeee;
+  --figma-color-surface-table-row-alt: #fcfcfc;
+  --figma-color-surface-photo: #e2e2e2;
+  --figma-color-surface-badge-neutral: #e8e8e8;
+  --figma-color-surface-info: #ecf1f4;
+
+  /* Bordes */
+  --figma-color-border-default: #c2c6d4;
+  --figma-color-border-subtle: rgba(194, 198, 212, 0.3);
+  --figma-color-border-info: #ecf1f4;
+
+  /* Estado operativo */
+  --figma-color-status-operativo-bg: #e1f5fe;
+  --figma-color-status-operativo-text: #039be5;
+
+  /* Mantenimiento */
+  --figma-color-maintenance-last: #337ab7;
+  --figma-color-maintenance-next: #f0ad4e;
+
+  /* Alerta crítica */
+  --figma-color-alert-bg: #fff7e6;
+  --figma-color-alert-border: #ffab00;
+  --figma-color-alert-text: #8a6d3b;
+
+  /* Timeline */
+  --figma-color-timeline-line: #c2c6d4;
+  --figma-color-timeline-success: #5cb85c;
+  --figma-color-timeline-info: #337ab7;
+  --figma-color-timeline-neutral: #e2e2e2;
+
+  /* Sombras */
+  --figma-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --figma-shadow-elevated: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.04);
+
+  /* Alias legacy (módulo equipo) */
+  --simprog-primary: var(--figma-color-brand-primary);
+  --simprog-text: var(--figma-color-text-primary);
+  --simprog-muted: var(--figma-color-text-secondary);
+  --simprog-border: var(--figma-color-border-default);
+  --simprog-surface: var(--figma-color-surface-page);
+  --simprog-card: var(--figma-color-surface-card);
+  --simprog-warning-bg: var(--figma-color-alert-bg);
+  --simprog-warning-border: var(--figma-color-alert-border);
+  --simprog-warning-text: var(--figma-color-alert-text);
+  --simprog-status-bg: var(--figma-color-status-operativo-bg);
+  --simprog-code-bg: var(--figma-color-surface-badge-neutral);
+  --simprog-maintenance-last: var(--figma-color-maintenance-last);
+  --simprog-maintenance-next: var(--figma-color-maintenance-next);
+}

@@ -5,24 +5,9 @@ import type { DevExtremeThemeMode } from './types';
 
 const STORAGE_KEY = 'devextreme-theme-mode';
 
-//Funcion para leer el modo almacenado en el localStorage
-function readStoredMode(): DevExtremeThemeMode | null {
-  try {
-    const v = localStorage.getItem(STORAGE_KEY);
-    if (v === 'light' || v === 'dark') return v;
-  } catch {
-    /* ignore */
-  }
-  return null;
-}
-
 //Funcion para obtener el modo inicial
 function initialMode(): DevExtremeThemeMode {
-  const stored = readStoredMode();
-  if (stored) return stored;
-  if (typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    return 'dark';
-  }
+  // Esta app está diseñada para una vista clara fija (alineada con Figma).
   return 'light';
 }
 
@@ -35,6 +20,14 @@ interface DevExtremeThemeProviderProps {
 export function DevExtremeThemeProvider({ children }: DevExtremeThemeProviderProps) {
   // Estado para el modo actual light o dark
   const [mode, setModeState] = useState<DevExtremeThemeMode>(initialMode);
+
+  useLayoutEffect(() => {
+    try {
+      localStorage.setItem(STORAGE_KEY, 'light');
+    } catch {
+      /* ignore */
+    }
+  }, []);
 
   //Funcion para establecer el modo actual
   const setMode = useCallback((next: DevExtremeThemeMode) => {
